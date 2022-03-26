@@ -18,16 +18,20 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      'pricing-bg': 'url("./src/components/assets/pgb.jpg")',
-      'info-bg': 'url("./src/components/assets/info.jpg")',
-      'viet-bg': 'url("./src/components/assets/vietnam.jpg")',
-      'burma-bg': 'url("./src/components/assets/burma.jpg")',
-      'thai-bg': 'url("./src/components/assets/thailand.jpg")',
-      'cambodia-bg': 'url("./src/components/assets/cambodia.jpg")',
+      // backgroundImage: theme =>( { 
+      //   "pricing-bg": 'url("./components/assets/pbg.jpg")',
+      //   "info-bg": 'url("./src/components/assets/info.jpg")',
+      //   "viet-bg": 'url("./src/components/assets/vietnam.jpg")',
+      //   "burma-bg": 'url("./src/components/assets/burma.jpg")',
+      //   "thai-bg": 'url("./src/components/assets/thailand.jpg")',
+      //   "cambodia-bg": 'url("./src/components/assets/cambodia.jpg")',
+      // }), 
+        
+      
     },
     zIndex: {
-      'z-10000' : 'z-10000'
-    }
+      "z-10000": "z-10000",
+    },
   },
   plugins: [],
 };
