@@ -1,14 +1,33 @@
 import React from "react";
-import Cards from "./elements/Cards.js";
-import pgb from "./assets/pgb.jpg";
+import Card from "./elements/Card";
 
 const Pricing = () => {
   return (
-    <div className="w-full h-screen grid place-items-center lg:grid-cols-2 bg-cover bg-center">
-      <Cards imageText="hello" h1Text="Hi"/>
-      <Cards imageText="hello" h1Text="Hi" />
-      <Cards imageText="hello" h1Text="Hi" />
-      <Cards imageText="hello" h1Text="Hi" />
+    <div className="w-full h-screen bg-pricing-bg bg-cover bg-center grid place-items-center lg:grid-cols-2 children:w-11/12 children:h-5/6 text-center p-4">
+      <Card
+        imageText="Thailand"
+        textColor="text-white"
+        h1Text="See More"
+        bgImage="bg-thai"
+      />
+      <Card
+        imageText="Cambodia"
+        textColor="text-white"
+        h1Text="See More"
+        bgImage="bg-cambodia"
+      />
+      <Card
+        imageText="Vietnam"
+        textColor="text-white"
+        h1Text="See More"
+        bgImage="bg-vietnam"
+      />
+      <Card
+        imageText="Myanmar"
+        textColor="text-white"
+        h1Text="See More"
+        bgImage="bg-burma"
+      />
     </div>
   );
 };

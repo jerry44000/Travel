@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header.js";
-import Section from "./components/assets/Section.js";
+import Section from "./components/elements/Section.js";
 import Pricing from "./components/Pricing.js";
 
 function App() {
