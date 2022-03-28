@@ -1,14 +1,18 @@
 import "./App.css";
 import Header from "./components/Header.js";
 import Section from "./components/elements/Section.js";
-import Pricing from "./components/Pricing.js";
+import Destinations from "./components/Destinations.js";
+import Footer from "./components/elements/Footer.js";
+import Informations from "./components/elements/Informations.js";
 
 function App() {
   return (
     <div className="md:w-full">
       <Header />
       <Section />
-      <Pricing />
+      <Destinations />
+      <Informations />
+      <Footer />
     </div>
   );
 }

@@ -16,15 +16,6 @@ const NavMobile = ({ active, showMenu }) => {
         <Link to="/">Pricing</Link>
       </li>
       <li>
-        <Link to="/">Clients</Link>
-      </li>
-      <li>
-        <Link to="/">Works</Link>
-      </li>
-      <li>
-        <Link to="/">Testimonials</Link>
-      </li>
-      <li>
         <Link to="/">About</Link>
       </li>
       <li>
