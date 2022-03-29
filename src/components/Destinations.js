@@ -8,12 +8,12 @@ const Destinations = () => {
       id="destinations"
       className="w-full h-full bg-pricing-bg bg-cover bg-center bg-fixed grid place-items-center lg:grid-cols-2"
     >
-      {contents.map((content, index) => (
+      {contents.map((content) => (
         <Card
           title={content.title}
           image={content.image}
           description={content.description}
-          key={content.index}
+          key={content.title}
         />
       ))}
     </div>

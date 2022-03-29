@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import NavMobile from "./elements/NavMobile.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import budda from "./assets/buddha.png";
+import AnotherCustomsBtn from "../components/elements/AnotherCustomsBtn.js";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+
+  let navigate = useNavigate();
 
   const showMenu = () => {
     setActive(!active);
@@ -20,13 +23,17 @@ const Header = () => {
       <nav>
         <ul className="hidden lg:flex gap-8 uppercase p-6 text-white font-medium cursor-pointer">
           <li>
-            <Link to="/">Pricing</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Help</Link>
+            <Link to="/help">Help</Link>
           </li>
           <li>
-            <Link to="/login">Login</Link>
+            <AnotherCustomsBtn>
+              <Link to="login">
+              Login
+              </Link>
+              </AnotherCustomsBtn>
           </li>
         </ul>
 
@@ -34,10 +41,7 @@ const Header = () => {
       </nav>
 
       <div className="lg:hidden scale-150">
-        <MenuIcon
-          onClick={showMenu}
-          className="cursor-pointer text-white"
-        />
+        <MenuIcon onClick={showMenu} className="cursor-pointer text-white" />
       </div>
     </div>
   );
