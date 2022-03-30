@@ -54,11 +54,12 @@ module.exports = {
         burma: 'url("./components/assets/burma.jpg")',
         vietnam: 'url("./components/assets/vietnam.jpg")',
         cambodia: 'url("./components/assets/cambodia.jpg")',
+        "private-bg": 'url("./components/assets/indonesia.jpg")',
       },
       zIndex: {
         10000: "10000",
       },
     },
   },
-  plugins: [require('tailwindcss-children'),],
+  plugins: [require("tailwindcss-children")],
 };

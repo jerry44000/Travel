@@ -1,5 +1,6 @@
 import React from "react";
 import AnotherCustomsBtn from "./AnotherCustomsBtn.js";
+import { Link } from "react-router-dom";
 import videoBg from "../assets/travel.mp4";
 
 const Section = () => {
@@ -8,8 +9,9 @@ const Section = () => {
       <div className="text-white text-center absolute uppercase sm:w-3/4 lg:w-2/4 bg-black/50 p-8 rounded-lg">
         <h1 className="res-font-sm font-bold">Asia trips</h1>
         <p className="res-font font-extrabold py-2">Best Asia Tour Companies</p>
-        
-        <AnotherCustomsBtn children="Join Us" />
+        <Link to="/login">
+          <AnotherCustomsBtn children="Join Us" />
+        </Link>
       </div>
     </div>
   );

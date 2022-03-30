@@ -13,13 +13,13 @@ const NavMobile = ({ active, showMenu }) => {
     >
       <CloseIcon onClick={showMenu} className="cursor-pointer" />
       <li>
-        <Link to="/">Pricing</Link>
+        <Link to="/">Help</Link>
       </li>
       <li>
-        <Link to="/">About</Link>
+        <Link to="/login">Sign Up</Link>
       </li>
       <li>
-        <Link to="/login">Login</Link>
+        <Link to="/signin">Sign In</Link>
       </li>
     </ul>
   );

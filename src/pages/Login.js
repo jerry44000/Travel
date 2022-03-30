@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/UserContext.js";
 import mekong from "../components/assets/mekong.jpg";
+import budda from "../components/assets/buddha.png";
 
 const Login = () => {
   const [validation, setValidation] = useState("");
@@ -48,6 +49,9 @@ const Login = () => {
   };
   return (
     <div className="min-h-[845px] h-screen flex bg-slate-900">
+      <span className="text-4xl font-extrabold uppercase text-white select-none mt-5 ml-5">
+        <img src={budda} alt="icon buddha" className="h-20 w-20" />
+      </span>
       <div className="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-20 lg:flex-none xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <h2 className="mt-6 text-2xl font-extrabold text-white md:text-3xl">
@@ -60,7 +64,7 @@ const Login = () => {
             <div className="space-y-4 mt-6">
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="loginemail"
                   className="block text-sm font-medium text-white"
                 >
                   Email address
@@ -68,14 +72,14 @@ const Login = () => {
                 <input
                   className="mt-1 appearance-none block w-full px-3 py-2 border border-white rounded-md shadow-sm focus:outline-none focus:ring-cyan-600 focus:border-cyan-600 sm:text-sm"
                   type="email"
-                  id="email"
+                  id="loginemail"
                   ref={addInputs}
                   required
                 />
               </div>
               <div>
                 <label
-                  htmlFor="password"
+                  htmlFor="loginpassword"
                   className="block text-sm font-medium text-white"
                 >
                   Password
@@ -83,7 +87,7 @@ const Login = () => {
                 <input
                   className="mt-1 appearance-none block w-full px-3 py-2 border border-white rounded-md shadow-sm focus:outline-none focus:ring-cyan-600 focus:border-cyan-600 sm:text-sm"
                   type="password"
-                  id="password"
+                  id="loginpassword"
                   ref={addInputs}
                   required
                 />

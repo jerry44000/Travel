@@ -4,12 +4,14 @@ import { Outlet, useLocation, Navigate } from "react-router-dom";
 
 export default function Private() {
   const { currentUser } = useContext(UserContext);
-  console.log("private", currentUser);
+  // console.log("private", currentUser);
 
   if (!currentUser) {
     return <Navigate to="/" />;
   }
-  return <div>
+  return (
+    <div>
       <Outlet />
-  </div>;
+    </div>
+  );
 }
