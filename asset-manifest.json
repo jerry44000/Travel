@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.36e62fd3.css",
+    "main.js": "/static/js/main.d9e899c0.js",
+    "static/media/travel.mp4": "/static/media/travel.5980403bf54b651317d8.mp4",
+    "static/media/info.jpg": "/static/media/info.074d0ce4be0da87d07fa.jpg",
+    "static/media/pbg.jpg": "/static/media/pbg.eff5c14523f693762bce.jpg",
+    "static/media/indonesia.jpg": "/static/media/indonesia.6b7c1ba310652e44e2b8.jpg",
+    "static/media/mekong.jpg": "/static/media/mekong.6295416c233633f67a42.jpg",
+    "static/media/travel-cover.jpg": "/static/media/travel-cover.6a1a1e0da8a364b4dc69.jpg",
+    "static/media/angkor.jpg": "/static/media/angkor.25f749ba39afd5c7957f.jpg",
+    "static/media/buddha.png": "/static/media/buddha.3e3f9d14bed87224ec56.png",
+    "static/media/vietnam.jpg": "/static/media/vietnam.8aa7a2877cd022a86cc7.jpg",
+    "static/media/cambodia.jpg": "/static/media/cambodia.480fa9bcc0f87b3462b3.jpg",
+    "static/media/thailand.jpg": "/static/media/thailand.3267262e5742770f3f92.jpg",
+    "static/media/burma.jpg": "/static/media/burma.2583bccc09fd2dc0d886.jpg",
+    "index.html": "/index.html",
+    "main.36e62fd3.css.map": "/static/css/main.36e62fd3.css.map",
+    "main.d9e899c0.js.map": "/static/js/main.d9e899c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36e62fd3.css",
+    "static/js/main.d9e899c0.js"
+  ]
+}
