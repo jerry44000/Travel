@@ -4,7 +4,7 @@ import InputBox from "../elements/InputBox.js";
 
 const SendMessages = () => {
   return (
-    <div className="flex items-start flex-col py-14">
+    <div className="p-4">
       <div className="flex flex-col gap-4 px-2 items-start w-full md:w-2/4 justify-center">
         <InputBox value="Name" placeValue="Enter your Name" />
         <InputBox value="Email" placeValue="exemple@gmail.com" />

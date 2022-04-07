@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import NavMobile from "../components/elements/NavMobile.js";
 import MenuIcon from "@mui/icons-material/Menu";
 import budda from "../components/assets/buddha.png";
@@ -20,6 +21,11 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home"/>
+        <link rel="canonical" href="/" />
+      </Helmet>
       <div className="w-full absolute lg:flex items-center p-4 flex justify-between">
         <span className="text-4xl font-extrabold uppercase text-white select-none">
           <img src={budda} alt="icon buddha" className="h-20 w-20" />
@@ -27,9 +33,6 @@ const Home = () => {
 
         <nav>
           <ul className="hidden lg:flex gap-8 uppercase p-6 text-white font-medium cursor-pointer">
-            <li>
-              <Link to="/help">Help</Link>
-            </li>
             <li>
               <Link to="/signin">
                 <AnotherCustomsBtn>Sign In</AnotherCustomsBtn>
